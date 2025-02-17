@@ -1,13 +1,13 @@
-function calculateVAT(amount) {
+function calculateVAT(price) {
   const invalid = "invalid";
-  if (typeof amount !== "number") {
+  if (typeof price !== "number") {
     return invalid;
-  } else if (amount < 0) {
+  } else if (price < 0) {
     return invalid;
   }
-  const VAT = (amount * 7.5) / 100;
+  const VAT = (price * 7.5) / 100;
   return VAT;
 }
 
-const vat = calculateVAT("foo");
+const vat = calculateVAT(1500);
 console.log(vat);
