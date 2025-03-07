@@ -1,7 +1,4 @@
 function validContact(contact) {
-  //   if (contact !== "number") {
-  //     return false;
-  //   }
   if (typeof contact !== "string") {
     return "invalid";
   }
